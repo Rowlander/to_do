@@ -1,0 +1,27 @@
+body {
+  background-color: #a8956f;
+}
+
+.container {
+  position:  center;
+  background-color: #6fa6a8;
+}
+
+.result {
+  position: center;
+  background-color: #a8886f;
+}
+
+.result table {
+  background-color: #a8766f;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.form {
+  text-align: center;
+}
+
+.form h1 {
+  font-family: "Brush Script MT";
+}

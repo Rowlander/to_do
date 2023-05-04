@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+  <div class="container">
+
+    <form class="form" action="/update" method="post">
+      <h1>ToDo list</h1>
+      <label for="content">enter ToDo item</label><br>
+      <input type="text" name="content" id="content"><br>
+      <input type="submit" value="Add Task">
+    </form>
+  </div>
+  <div class="result">

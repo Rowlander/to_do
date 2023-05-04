@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+  <div class="container">
+
+    <form class="form" action="/add_todo" method="post">
+      <h1>ToDo list</h1>
+      <label for="content">enter ToDo item</label><br>
+      <input type="text" name="content" id="content"><br>
+      <input type="submit" value="Add Task">
+    </form>
+  </div>
+  <div class="result">
+
+
+    <table>
+      {% for task in tasks %}
+        <tr>
+          <td>{{ task.content }}</td>
+          <td>{{ task.date_created.date() }}</td>
+          <td>
+            <a href="/delete/{{task.id}}">Done</a>
+            <a href="/update/{{task.id}}">Update</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
+{% endblock %}
